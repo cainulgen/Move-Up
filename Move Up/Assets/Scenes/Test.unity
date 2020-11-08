@@ -2313,7 +2313,7 @@ MonoBehaviour:
   isExpanded: 1
   prefab:
     target: 3
-    gameObject: {fileID: 2243551214667442764, guid: e5888331077fe8f4593c10cfa00e606e,
+    gameObject: {fileID: 147750215883015502, guid: e59616387ceb6ec449c71ca2db219688,
       type: 3}
     global:
       allowTypesMask: 512
@@ -2333,8 +2333,8 @@ MonoBehaviour:
         m_Calls: []
   initLocation:
     target: 3
-    offset: {x: 0, y: 2, z: 5}
-    targetTransform: {fileID: 106188434}
+    offset: {x: 1, y: 0, z: 2}
+    targetTransform: {fileID: 963194228}
     targetPosition: {x: 0, y: 0, z: 0}
     local:
       allowTypesMask: 608
@@ -3728,42 +3728,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 2115609400}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c9ac027e764cd4be5aaebfa04aeddd1e, type: 3}
+  m_Script: {fileID: 11500000, guid: 689609395cdc547e7805e49854fd4966, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   setCameraProperties: 0
   projection: 1
   cameraSize: 5
   fieldOfView: 60
-  target:
-    target: 0
-    gameObject: {fileID: 0}
-    global:
-      allowTypesMask: 512
-      name: 
-    local:
-      allowTypesMask: 512
-      name: 
-      targetType: 2
-      targetObject: {fileID: 0}
-    list:
-      targetType: 3
-      targetObject: {fileID: 0}
-      select: 1
-      index: 0
-    eventChangeVariable:
-      m_PersistentCalls:
-        m_Calls: []
-  targetOffset: {x: 0, y: 1, z: 0}
-  pivotOffset: {x: 0, y: 0, z: 0}
-  initialDirection: 0
-  allowOrbitInput: 1
-  orbitInput: 0
-  orbitSpeed: 25
-  maxPitch: 120
+  positionOffset: {x: 0, y: 2, z: 0}
+  rotateInput: 0
   sensitivity:
     optionIndex: 0
-    value: {x: 10, y: 10}
+    value: {x: 2, y: 2}
     global:
       allowTypesMask: 32
       name: 
@@ -3777,19 +3753,11 @@ MonoBehaviour:
       targetObject: {fileID: 0}
       select: 1
       index: 0
-  allowZoom: 0
-  zoomSpeed: 25
-  initialZoom: 4
-  zoomSensitivity: 5
-  zoomLimits: {x: 1, y: 10}
-  avoidWallClip: 1
-  wallClipRadius: 0.4
-  wallClipLayerMask:
-    serializedVersion: 2
-    m_Bits: 4294967291
-  autoRepositionBehind: 0
-  autoRepositionTimeout: 1.5
-  autoRepositionSpeed: 2.5
+  maxPitch: 120
+  smoothRotation: 0.1
+  headbobPeriod: 0.25
+  headbobAmount: {x: 0.1, y: 0.05, z: 0.01}
+  modelManipulator: 1
 --- !u!114 &2115609402
 MonoBehaviour:
   m_ObjectHideFlags: 0
