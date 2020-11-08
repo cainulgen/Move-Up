@@ -1973,6 +1973,7 @@ GameObject:
   - component: {fileID: 1068516126}
   - component: {fileID: 1068516125}
   - component: {fileID: 1068516124}
+  - component: {fileID: 1068516128}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -2048,12 +2049,28 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1068516123}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.66269875, y: 1.1975272, z: 8.75}
+  m_LocalPosition: {x: 0.66269875, y: 1.95, z: 8.75}
   m_LocalScale: {x: 2.9041, y: 2.9041, z: 2.9041}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!54 &1068516128
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1068516123}
+  serializedVersion: 2
+  m_Mass: 10
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1094086755
 GameObject:
   m_ObjectHideFlags: 0
@@ -2384,8 +2401,9 @@ GameObject:
   - component: {fileID: 1358179184}
   - component: {fileID: 1358179183}
   - component: {fileID: 1358179182}
+  - component: {fileID: 1358179189}
   m_Layer: 0
-  m_Name: Shooting
+  m_Name: Simple Gun
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2471,6 +2489,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   actions:
   - {fileID: 1358179182}
+  - {fileID: 1358179189}
   executingIndex: -1
   isExecuting: 0
 --- !u!114 &1358179184
@@ -2556,6 +2575,24 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1358179189
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1358179181}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c96c8ab5bb4a4363b6cb5248f18b52e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isExpanded: 1
+  audioClip: {fileID: 8300000, guid: 7fb7c634ffd406241bb7256af5d9ad9a, type: 3}
+  audioMixer: 2
+  mixerGroup: {fileID: 0}
+  fadeIn: 0
+  volume: 1
 --- !u!1 &1403555743
 GameObject:
   m_ObjectHideFlags: 0
