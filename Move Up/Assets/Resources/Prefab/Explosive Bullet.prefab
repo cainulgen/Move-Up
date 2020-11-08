@@ -10,8 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 8872048450239166723}
   - component: {fileID: 6284353238711809508}
-  - component: {fileID: 120563398971909522}
-  - component: {fileID: 3168295767653539256}
   - component: {fileID: -8475660269577144737}
   - component: {fileID: 4271923210472819518}
   - component: {fileID: -857369523818102150}
@@ -19,7 +17,6 @@ GameObject:
   - component: {fileID: 50954652969732825}
   - component: {fileID: 6119071789595962375}
   - component: {fileID: -7248672131801525871}
-  - component: {fileID: 1916044565238540602}
   - component: {fileID: -3260455123334466683}
   - component: {fileID: -7833291431800474589}
   - component: {fileID: -1720893142263491001}
@@ -34,6 +31,8 @@ GameObject:
   - component: {fileID: 5573536925495800070}
   - component: {fileID: 7697404886401336317}
   - component: {fileID: -6862694871271585135}
+  - component: {fileID: 7006414372655912454}
+  - component: {fileID: 3028530370444058124}
   m_Layer: 0
   m_Name: Explosive Bullet
   m_TagString: Untagged
@@ -65,58 +64,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 147750215883015502}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
---- !u!23 &120563398971909522
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 147750215883015502}
-  m_Enabled: 0
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 6af456f7c331b674c948d82d0bb9d9a2, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
---- !u!135 &3168295767653539256
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 147750215883015502}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &-8475660269577144737
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -201,7 +148,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isExpanded: 1
-  force: {x: 0, y: 0, z: 20}
+  force: {x: 0, y: 0, z: 50}
   target:
     target: 3
     gameObject: {fileID: 147750215883015502}
@@ -254,57 +201,13 @@ MonoBehaviour:
   igniters:
     keys: ffffffff
     values:
-    - {fileID: 1916044565238540602}
+    - {fileID: 3028530370444058124}
   items:
   - option: 1
     conditions: {fileID: 0}
     actions: {fileID: -3260455123334466683}
   minDistance: 0
   minDistanceToPlayer: 5
---- !u!114 &1916044565238540602
-MonoBehaviour:
-  m_ObjectHideFlags: 3
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 147750215883015502}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ddd9331145d5344c99a4ccf8e0703b6e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  trigger: {fileID: -7248672131801525871}
-  otherCollider: {fileID: 0}
-  storeSelf:
-    variableType: 0
-    global:
-      allowTypesMask: 512
-      name: 
-    local:
-      allowTypesMask: 512
-      name: 
-      targetType: 2
-      targetObject: {fileID: 0}
-    list:
-      targetType: 3
-      targetObject: {fileID: 0}
-      select: 1
-      index: 0
-  storeCollider:
-    variableType: 0
-    global:
-      allowTypesMask: 512
-      name: 
-    local:
-      allowTypesMask: 512
-      name: 
-      targetType: 2
-      targetObject: {fileID: 0}
-    list:
-      targetType: 3
-      targetObject: {fileID: 0}
-      select: 1
-      index: 0
 --- !u!114 &-3260455123334466683
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -339,6 +242,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   actions:
   - {fileID: 7697404886401336317}
+  - {fileID: 7006414372655912454}
   - {fileID: 2585786371066786743}
   - {fileID: -6862694871271585135}
   - {fileID: -1720893142263491001}
@@ -388,7 +292,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f54c79acf2bf4449b8b2f7656f4253e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isExpanded: 1
+  isExpanded: 0
   prefab:
     target: 3
     gameObject: {fileID: 4105067654746962102, guid: 083f8150f710c7d4394c54921380ee80,
@@ -622,7 +526,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c96c8ab5bb4a4363b6cb5248f18b52e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isExpanded: 1
+  isExpanded: 0
   audioClip: {fileID: 8300000, guid: 108ca4731722be243bcf09e56eb6afad, type: 3}
   audioMixer: 2
   mixerGroup: {fileID: 0}
@@ -640,7 +544,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f54c79acf2bf4449b8b2f7656f4253e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isExpanded: 1
+  isExpanded: 0
   prefab:
     target: 3
     gameObject: {fileID: 1697656817295121907, guid: be18721365c88a946b090eb534823366,
@@ -686,6 +590,114 @@ MonoBehaviour:
       name: 
     local:
       allowTypesMask: -1
+      name: 
+      targetType: 2
+      targetObject: {fileID: 0}
+    list:
+      targetType: 3
+      targetObject: {fileID: 0}
+      select: 1
+      index: 0
+--- !u!114 &7006414372655912454
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 147750215883015502}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 828fb76e63a5f4de881052c5a5b97c22, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isExpanded: 1
+  useActionPosition: 1
+  position:
+    target: 2
+    offset: {x: 0, y: 0, z: 0}
+    targetTransform: {fileID: 0}
+    targetPosition: {x: 0, y: 0, z: 0}
+    local:
+      allowTypesMask: 608
+      name: 
+      targetType: 2
+      targetObject: {fileID: 0}
+    global:
+      allowTypesMask: 608
+      name: 
+    list:
+      targetType: 3
+      targetObject: {fileID: 0}
+      select: 1
+      index: 0
+  radius:
+    optionIndex: 0
+    value: 5
+    global:
+      allowTypesMask: 4
+      name: 
+    local:
+      allowTypesMask: 4
+      name: 
+      targetType: 2
+      targetObject: {fileID: 0}
+    list:
+      targetType: 3
+      targetObject: {fileID: 0}
+      select: 1
+      index: 0
+  force:
+    optionIndex: 0
+    value: 60
+    global:
+      allowTypesMask: 4
+      name: 
+    local:
+      allowTypesMask: 4
+      name: 
+      targetType: 2
+      targetObject: {fileID: 0}
+    list:
+      targetType: 3
+      targetObject: {fileID: 0}
+      select: 1
+      index: 0
+--- !u!114 &3028530370444058124
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 147750215883015502}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ddd9331145d5344c99a4ccf8e0703b6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  trigger: {fileID: -7248672131801525871}
+  otherCollider: {fileID: 0}
+  storeSelf:
+    variableType: 0
+    global:
+      allowTypesMask: 512
+      name: 
+    local:
+      allowTypesMask: 512
+      name: 
+      targetType: 2
+      targetObject: {fileID: 0}
+    list:
+      targetType: 3
+      targetObject: {fileID: 0}
+      select: 1
+      index: 0
+  storeCollider:
+    variableType: 0
+    global:
+      allowTypesMask: 512
+      name: 
+    local:
+      allowTypesMask: 512
       name: 
       targetType: 2
       targetObject: {fileID: 0}
