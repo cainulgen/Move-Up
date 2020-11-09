@@ -32,11 +32,10 @@ GameObject:
   - component: {fileID: 545265960714217067}
   - component: {fileID: 393132658263521730}
   - component: {fileID: 5573536925495800070}
-  - component: {fileID: 7697404886401336317}
   - component: {fileID: -6862694871271585135}
   m_Layer: 0
   m_Name: Bullet
-  m_TagString: Untagged
+  m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -337,7 +336,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   actions:
-  - {fileID: 7697404886401336317}
   - {fileID: 2585786371066786743}
   - {fileID: -6862694871271585135}
   - {fileID: -1720893142263491001}
@@ -355,7 +353,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 06f6fcda176114231b71e606c347f970, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isExpanded: 0
+  isExpanded: 1
   target:
     target: 3
     gameObject: {fileID: 147750215883015502}
@@ -609,24 +607,6 @@ MonoBehaviour:
     eventChangeVariable:
       m_PersistentCalls:
         m_Calls: []
---- !u!114 &7697404886401336317
-MonoBehaviour:
-  m_ObjectHideFlags: 3
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 147750215883015502}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7c96c8ab5bb4a4363b6cb5248f18b52e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isExpanded: 1
-  audioClip: {fileID: 8300000, guid: 108ca4731722be243bcf09e56eb6afad, type: 3}
-  audioMixer: 2
-  mixerGroup: {fileID: 0}
-  fadeIn: 0
-  volume: 0.044
 --- !u!114 &-6862694871271585135
 MonoBehaviour:
   m_ObjectHideFlags: 3
