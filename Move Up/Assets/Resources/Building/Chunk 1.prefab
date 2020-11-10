@@ -476,7 +476,7 @@ MonoBehaviour:
       index: 0
   radius:
     optionIndex: 0
-    value: 10
+    value: 5
     global:
       allowTypesMask: 4
       name: 
@@ -492,7 +492,7 @@ MonoBehaviour:
       index: 0
   force:
     optionIndex: 0
-    value: 150
+    value: 4
     global:
       allowTypesMask: 4
       name: 
