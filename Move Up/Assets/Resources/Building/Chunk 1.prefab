@@ -173,6 +173,7 @@ GameObject:
   - component: {fileID: 5487582702379101749}
   - component: {fileID: 7063445133234679571}
   - component: {fileID: 4234656356381411118}
+  - component: {fileID: 4056758087831771942}
   m_Layer: 0
   m_Name: Chunk 1
   m_TagString: Untagged
@@ -266,6 +267,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   actions:
+  - {fileID: 4056758087831771942}
   - {fileID: 4234656356381411118}
   executingIndex: -1
   isExecuting: 0
@@ -335,6 +337,20 @@ MonoBehaviour:
       targetObject: {fileID: 0}
       select: 1
       index: 0
+--- !u!114 &4056758087831771942
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3727101097434924387}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 093bbc6a7c1334b37ac569a948728c55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isExpanded: 1
+  waitTime: 0
 --- !u!1 &4077209536767010280
 GameObject:
   m_ObjectHideFlags: 0
@@ -752,7 +768,7 @@ GameObject:
   - component: {fileID: 1474595150487515261}
   m_Layer: 0
   m_Name: 2
-  m_TagString: Untagged
+  m_TagString: Building
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -846,7 +862,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.9, y: 0.9, z: 0.9}
+  m_Size: {x: 1.2, y: 1.2, z: 1.2}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &3068504160892594682
 MonoBehaviour:
@@ -974,7 +990,7 @@ GameObject:
   - component: {fileID: 2438221411693538679}
   m_Layer: 0
   m_Name: 3
-  m_TagString: Untagged
+  m_TagString: Building
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1068,7 +1084,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.9, y: 0.9, z: 0.9}
+  m_Size: {x: 1.2, y: 1.2, z: 1.2}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &6589768355936691143
 MonoBehaviour:
@@ -1244,7 +1260,7 @@ GameObject:
   - component: {fileID: 27736056206808042}
   m_Layer: 0
   m_Name: 4
-  m_TagString: Untagged
+  m_TagString: Building
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1338,7 +1354,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.9, y: 0.9, z: 0.9}
+  m_Size: {x: 1.2, y: 1.2, z: 1.2}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &6596649939799494974
 MonoBehaviour:
@@ -1457,11 +1473,11 @@ GameObject:
   - component: {fileID: 8846688920956020155}
   - component: {fileID: 8744966570337682337}
   - component: {fileID: 5286017507725769209}
-  - component: {fileID: 8285193788602725515}
-  - component: {fileID: 7750260572205831562}
+  - component: {fileID: 5293539438336453589}
+  - component: {fileID: 7235021912668465978}
   m_Layer: 0
   m_Name: 1
-  m_TagString: Untagged
+  m_TagString: Building
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1555,7 +1571,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.9, y: 0.9, z: 0.9}
+  m_Size: {x: 1.2, y: 1.2, z: 1.2}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &8846688920956020155
 MonoBehaviour:
@@ -1572,7 +1588,7 @@ MonoBehaviour:
   igniters:
     keys: ffffffff
     values:
-    - {fileID: 0}
+    - {fileID: 7235021912668465978}
   items:
   - option: 1
     conditions: {fileID: 0}
@@ -1612,11 +1628,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   actions:
-  - {fileID: 8285193788602725515}
-  - {fileID: 7750260572205831562}
+  - {fileID: 5293539438336453589}
   executingIndex: -1
   isExecuting: 0
---- !u!114 &8285193788602725515
+--- !u!114 &5293539438336453589
 MonoBehaviour:
   m_ObjectHideFlags: 3
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1625,27 +1640,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 5406240328446395529}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 093bbc6a7c1334b37ac569a948728c55, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isExpanded: 1
-  waitTime: 2
---- !u!114 &7750260572205831562
-MonoBehaviour:
-  m_ObjectHideFlags: 3
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5406240328446395529}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a47f6d43c5de44c9db0b2cc0994c7c97, type: 3}
+  m_Script: {fileID: 11500000, guid: 06f6fcda176114231b71e606c347f970, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   isExpanded: 1
   target:
     target: 3
-    gameObject: {fileID: 5406240328446395529}
+    gameObject: {fileID: 3727101097434924387}
     global:
       allowTypesMask: 512
       name: 
@@ -1662,51 +1663,20 @@ MonoBehaviour:
     eventChangeVariable:
       m_PersistentCalls:
         m_Calls: []
-  changeParent: 0
-  newParent:
-    target: 3
-    gameObject: {fileID: 0}
-    global:
-      allowTypesMask: -1
-      name: 
-    local:
-      allowTypesMask: -1
-      name: 
-      targetType: 2
-      targetObject: {fileID: 0}
-    list:
-      targetType: 3
-      targetObject: {fileID: 0}
-      select: 1
-      index: 0
-    eventChangeVariable:
-      m_PersistentCalls:
-        m_Calls: []
-  changePosition: 1
-  positionRelativity: 1
-  position:
-    target: 4
-    offset: {x: 0, y: 0, z: 0}
-    targetTransform: {fileID: 0}
-    targetPosition: {x: 0, y: -5, z: 0}
-    local:
-      allowTypesMask: 608
-      name: 
-      targetType: 2
-      targetObject: {fileID: 0}
-    global:
-      allowTypesMask: 608
-      name: 
-    list:
-      targetType: 3
-      targetObject: {fileID: 0}
-      select: 1
-      index: 0
-  changeRotation: 0
-  rotationRelativity: 1
-  rotation: {x: 0, y: 0, z: 0}
-  changeScale: 0
-  scale: {x: 1, y: 1, z: 1}
+--- !u!114 &7235021912668465978
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5406240328446395529}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f23fc4dc7602f496b888f9d92118038b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  trigger: {fileID: 8846688920956020155}
+  keyCode: 99
 --- !u!1 &6472390864967730487
 GameObject:
   m_ObjectHideFlags: 0
