@@ -9,7 +9,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3118894537992850194}
-  - component: {fileID: 3118894537992850195}
   - component: {fileID: 3118894537992850192}
   - component: {fileID: 3118894537992850193}
   - component: {fileID: 3118894537992850206}
@@ -23,7 +22,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &3118894537992850194
 Transform:
   m_ObjectHideFlags: 0
@@ -38,19 +37,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!135 &3118894537992850195
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3118894537992850179}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &3118894537992850192
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -140,7 +126,7 @@ MonoBehaviour:
   isExpanded: 1
   prefab:
     target: 3
-    gameObject: {fileID: 147750215883015502, guid: c86de81003be94044baa3f5674a4719a,
+    gameObject: {fileID: 147750215883015502, guid: c2bc703427150e14998c3a53fba77c8a,
       type: 3}
     global:
       allowTypesMask: 512
