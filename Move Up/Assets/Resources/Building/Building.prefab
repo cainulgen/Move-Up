@@ -215,7 +215,7 @@ MonoBehaviour:
   isExpanded: 1
   prefab:
     target: 3
-    gameObject: {fileID: 5199823385653734161, guid: 9c5c7f53a1459e644b6b81e59991f007,
+    gameObject: {fileID: 8754272268593080929, guid: 9c5c7f53a1459e644b6b81e59991f007,
       type: 3}
     global:
       allowTypesMask: 512
