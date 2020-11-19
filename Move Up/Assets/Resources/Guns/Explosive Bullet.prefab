@@ -33,7 +33,7 @@ GameObject:
   - component: {fileID: 7057435843288471114}
   - component: {fileID: 2491507244293648879}
   m_Layer: 0
-  m_Name: Explosive Bullet 2
+  m_Name: Explosive Bullet
   m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -48,7 +48,7 @@ Transform:
   m_GameObject: {fileID: 147750215883015502}
   m_LocalRotation: {x: -0, y: 0.70710707, z: -0, w: 0.70710653}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 5.109482}
+  m_LocalScale: {x: 0.25, y: 0.25, z: 2.554741}
   m_Children:
   - {fileID: 7027415288151124376}
   - {fileID: 9221707593102402419}
