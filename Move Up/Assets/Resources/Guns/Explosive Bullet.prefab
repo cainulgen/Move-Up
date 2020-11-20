@@ -374,7 +374,7 @@ MonoBehaviour:
   space: 1
   duration:
     optionIndex: 0
-    value: 5
+    value: 45
     global:
       allowTypesMask: 4
       name: 
