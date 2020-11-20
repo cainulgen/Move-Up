@@ -26,6 +26,7 @@ GameObject:
   - component: {fileID: 7057435843288471114}
   - component: {fileID: 2491507244293648879}
   - component: {fileID: 567217117006360153}
+  - component: {fileID: 6791667143100603722}
   m_Layer: 0
   m_Name: Explosive Bullet
   m_TagString: Bullet
@@ -177,6 +178,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   actions:
   - {fileID: 567217117006360153}
+  - {fileID: 6791667143100603722}
   executingIndex: -1
   isExecuting: 0
 --- !u!114 &-1771986689618174217
@@ -447,6 +449,72 @@ MonoBehaviour:
   prefab:
     target: 3
     gameObject: {fileID: 3463120676605573192, guid: 6ccb0c7eb14cc2945aa66b81553992a7,
+      type: 3}
+    global:
+      allowTypesMask: 512
+      name: 
+    local:
+      allowTypesMask: 512
+      name: 
+      targetType: 2
+      targetObject: {fileID: 0}
+    list:
+      targetType: 3
+      targetObject: {fileID: 0}
+      select: 1
+      index: 0
+    eventChangeVariable:
+      m_PersistentCalls:
+        m_Calls: []
+  initLocation:
+    target: 3
+    offset: {x: 0, y: 0, z: 0}
+    targetTransform: {fileID: 8872048450239166723}
+    targetPosition: {x: 0, y: 0, z: 0}
+    local:
+      allowTypesMask: 608
+      name: 
+      targetType: 2
+      targetObject: {fileID: 0}
+    global:
+      allowTypesMask: 608
+      name: 
+    list:
+      targetType: 3
+      targetObject: {fileID: 0}
+      select: 1
+      index: 0
+  storeInstance:
+    variableType: 0
+    global:
+      allowTypesMask: -1
+      name: 
+    local:
+      allowTypesMask: -1
+      name: 
+      targetType: 2
+      targetObject: {fileID: 0}
+    list:
+      targetType: 3
+      targetObject: {fileID: 0}
+      select: 1
+      index: 0
+--- !u!114 &6791667143100603722
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 147750215883015502}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f54c79acf2bf4449b8b2f7656f4253e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isExpanded: 1
+  prefab:
+    target: 3
+    gameObject: {fileID: 6717062934207540154, guid: ab573923d6004aa4ba3301bbef7b0e91,
       type: 3}
     global:
       allowTypesMask: 512
